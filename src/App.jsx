@@ -1,11 +1,15 @@
 import "./App.css";
-import TaskList from "./components/TaskList";
+import "./index.css";
+import store from "./lib/store";
+
+import { Provider } from "react-redux";
+import InboxScreen from "./components/InboxScreen";
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Title</h1>
-    </div>
+    <Provider store={store}>
+      <InboxScreen />
+    </Provider>
   );
 }
 
