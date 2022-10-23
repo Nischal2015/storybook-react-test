@@ -19,11 +19,11 @@ export default function TaskList() {
   const dispatch = useDispatch();
 
   const pinTask = (value) => {
-    dispatch(updateTaskState({ id: value, state: "TASK_PINNED" }));
+    dispatch(updateTaskState({ id: value, newTaskState: "TASK_PINNED" }));
   };
 
   const archiveTask = (value) => {
-    dispatch(updateTaskState({ id: value, state: "TASK_ARCHIVED" }));
+    dispatch(updateTaskState({ id: value, newTaskState: "TASK_ARCHIVED" }));
   };
 
   const LoadingRow = (
@@ -67,8 +67,8 @@ export default function TaskList() {
         <Task
           key={task.id}
           task={task}
-          onArchiveTask={(task) => archiveTask(task.id)}
-          onPinTask={(task) => pinTask(task.id)}
+          onArchiveTask={(id) => archiveTask(id)}
+          onPinTask={(id) => pinTask(id)}
         />
       ))}
     </div>
