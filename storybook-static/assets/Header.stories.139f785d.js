@@ -1,2 +1,0 @@
-import"./index.f44dc435.js";import{H as e}from"./Header.87321e58.js";import{j as r}from"./jsx-runtime.5c9542a3.js";import"./iframe.928d792c.js";import"./index.81ebe8e0.js";import"./Button.4a13053b.js";const c={title:"Example/Header",component:e,parameters:{layout:"fullscreen"}},o=t=>r(e,{...t}),a=o.bind({});a.args={user:{name:"Jane Doe"}};const s=o.bind({});s.args={};const l=["LoggedIn","LoggedOut"];export{a as LoggedIn,s as LoggedOut,l as __namedExportsOrder,c as default};
-//# sourceMappingURL=Header.stories.139f785d.js.map
