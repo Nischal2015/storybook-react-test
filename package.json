@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sb": "storybook dev -p 6006",
-    "build-sb": "storybook build",
-    "test-sb": "test-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
@@ -29,6 +29,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "chromatic": "^6.10.5",
     "msw": "^0.47.4",
     "msw-storybook-addon": "^1.6.3",
     "storybook": "^7.0.0-alpha.41",
